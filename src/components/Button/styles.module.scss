@@ -1,0 +1,28 @@
+.button {
+  user-select: none;
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius-3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spaces-1);
+
+  padding: 0px var(--spaces-2);
+  font-size: var(--font-size-3);
+
+  border-radius: var(--border-radius-3);
+
+  font-size: var(--font-size-3);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.57em;
+
+  cursor: pointer;
+}
+
+.size__large {
+  padding: 0 var(--spaces-2);
+  height: var(--spaces-5);
+}

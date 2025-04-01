@@ -1,0 +1,21 @@
+.title {
+  color: var(--color-text-primary);
+  text-align: center;
+  font-size: var(--font-size-10);
+  line-height: 1.5em;
+  font-weight: 400;
+  letter-spacing: -0.96px;
+  max-width: var(--max-width-title);
+
+  strong {
+    color: var(--color-primary-brand-300);
+    font-weight: 500;
+  }
+}
+
+.hero {
+  display: flex;
+  background-color: red;
+  flex: 1;
+  justify-content: center;
+}

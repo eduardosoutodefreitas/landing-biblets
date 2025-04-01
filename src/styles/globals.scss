@@ -1,0 +1,197 @@
+:root {
+  --root-font-size: 10px;
+
+  --max-width: 120rem;
+  --max-width-title: 95rem;
+
+  /* -------- Space -------- */
+  --space-0-5: 0.2rem;
+  --space-1: 0.4rem;
+  --space-1-5: 0.6rem;
+  --space-2: 0.8rem;
+  --space-2-5: 1rem;
+  --space-3: 1.2rem;
+  --space-3-5: 1.4rem;
+  --space-4: 1.6rem;
+  --space-4-5: 1.8rem;
+  --space-5: 2rem;
+  --space-5-5: 2.2rem;
+  --space-6: 2.4rem;
+  --space-7: 2.8rem;
+  --space-8: 3.2rem;
+  --space-9: 3.6rem;
+  --space-10: 4rem;
+  --space-11: 4.4rem;
+  --space-12: 4.8rem;
+  --space-13: 5.2rem;
+  --space-14: 5.6rem;
+  --space-15: 6rem;
+  --space-16: 6.4rem;
+  --space-17: 6.8rem;
+  --space-18: 7.2rem;
+  --space-19: 7.6rem;
+  --space-20: 8rem;
+
+  --radius-0-5: 0.2rem;
+  --radius-1: 0.4rem;
+  --radius-1-5: 0.6rem;
+  --radius-2: 0.8rem;
+  --radius-2-5: 1rem;
+  --radius-3: 1.2rem;
+  --radius-4: 1.6rem;
+  --radius-5: 2rem;
+  --radius-6: 2.4rem;
+  --radius-99: 999.9rem;
+
+  --font-size-1: 1rem;
+  --font-size-2: 1.2rem;
+  --font-size-3: 1.4rem;
+  --font-size-4: 1.6rem;
+  --font-size-5: 1.8rem;
+  --font-size-6: 2rem;
+  --font-size-7: 2.4rem;
+  --font-size-8: 3rem;
+  --font-size-9: 3.6rem;
+  --font-size-10: 4.8rem;
+  --font-size-11: 6rem;
+  --font-size-12: 7.2rem;
+
+  /* -------- Colors -------- */
+
+  /* Base */
+  --color-primary-base-white: #ffffff;
+  --color-primary-base-black: #000000;
+  --color-primary-base-transparent: transparent;
+
+  /* Brand */
+  --color-primary-brand-25: #f2f9fd;
+  --color-primary-brand-50: #f2f9fd;
+  --color-primary-brand-100: #e4f0fa;
+  --color-primary-brand-200: #c3e2f4;
+  --color-primary-brand-300: #80c4e9;
+  --color-primary-brand-400: #51afdf;
+  --color-primary-brand-500: #2b95cc;
+  --color-primary-brand-600: #1c78ad;
+  --color-primary-brand-700: #18608c;
+  --color-primary-brand-800: #185174;
+  --color-primary-brand-900: #194561;
+  --color-primary-brand-950: #112c40;
+
+  /* Light Gray */
+  --color-light-gray-25: #fcfcfd;
+  --color-light-gray-50: #fafafa;
+  --color-light-gray-100: #f5f5f5;
+  --color-light-gray-200: #e9eaeb;
+  --color-light-gray-300: #d5d7da;
+  --color-light-gray-400: #a4a7ae;
+  --color-light-gray-500: #717680;
+  --color-light-gray-600: #535862;
+  --color-light-gray-700: #414651;
+  --color-light-gray-800: #252b37;
+  --color-light-gray-900: #181d27;
+  --color-light-gray-950: #0a0d12;
+
+  /* Dark Gray */
+  --color-dark-gray-25: #fafafa;
+  --color-dark-gray-50: #f7f7f7;
+  --color-dark-gray-100: #f0f0f1;
+  --color-dark-gray-200: #ececed;
+  --color-dark-gray-300: #cecfd2;
+  --color-dark-gray-400: #94979c;
+  --color-dark-gray-500: #85888e;
+  --color-dark-gray-600: #61656c;
+  --color-dark-gray-700: #373a41;
+  --color-dark-gray-800: #22262f;
+  --color-dark-gray-900: #13161b;
+  --color-dark-gray-950: #0c0e12;
+
+  /* Text Colors */
+  --color-text-primary: #181d27;
+  --color-text-secondary: #414651;
+  --color-text-tertiary: #535862;
+  --color-text-quaternary: #717680;
+  --color-text-white: #ffffff;
+  --color-text-disabled: #717680;
+  --color-text-placeholder: #717680;
+  --color-text-placeholder-subtle: #d5d7da;
+
+  --color-text-brand-primary: #194561;
+  --color-text-brand-secondary: #18608c;
+  --color-text-brand-tertiary: #1c78ad;
+  --color-text-brand-tertiary-alt: #1c78ad;
+
+  --color-text-error-primary: #d92d20;
+  --color-text-success-primary: #d92d20;
+  --color-text-warning-primary: #d92d20;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: var(--root-font-size);
+  background: var(--);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+body {
+  font-size: var(--font-size-4);
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--color-primary-base-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-14);
+  padding: var(--space-20) 0px;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  gap: var(--space-14);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+textarea {
+  font-family: aeonik, aeonik Fallback;
+}
+
+@media (max-width: 1250px) {
+  :root {
+    --root-font-size: 0.8vw;
+  }
+}
+
+// @media (max-width: $max-media-mobile) {
+//   :root {
+//     --root-font-size: 10px;
+//   }
+// }
+
+// @media (max-width: $max-media-mobile) {
+//   :root {
+//     --root-font-size: 2vw;
+//   }
+// }
