@@ -1,12 +1,8 @@
 import styles from "./Icon.module.scss";
 import { ArrowUpRight } from "./components/ArrowUpRight";
-import { Apple } from "./components/iilustrations/Apple";
-import { GooglePlay } from "./components/iilustrations/GooglePlay";
 
 const icons = {
   ["arrow-up-right"]: ArrowUpRight,
-  Apple,
-  GooglePlay,
 };
 
 export type TIconSizes = 1 | 2 | 3;

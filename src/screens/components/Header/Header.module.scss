@@ -10,4 +10,14 @@
     gap: var(--space-6);
     align-items: center;
   }
+
+  @include mobile {
+    flex-direction: column;
+    gap: var(--space-6);
+
+    .links {
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+  }
 }

@@ -10,7 +10,7 @@ const Footer = ({ children }: FooterProps) => {
   return (
     <footer className={styles.container}>
       <Logo />
-      {children}
+      <div className={styles.links}>{children}</div>
     </footer>
   );
 };

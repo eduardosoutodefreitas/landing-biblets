@@ -1,3 +1,8 @@
+.container {
+  @include mobile {
+    flex-direction: column-reverse;
+  }
+}
 .title {
   color: var(--color-text-primary);
   text-align: center;
@@ -11,11 +16,84 @@
     color: var(--color-primary-brand-300);
     font-weight: 500;
   }
+
+  @include mobile {
+    font-size: var(--font-size-8);
+  }
 }
 
 .hero {
-  display: flex;
-  background-color: red;
-  flex: 1;
-  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 750px;
+  @include mobile {
+    height: 672px;
+  }
+
+  .illustration {
+    height: auto;
+    max-width: 650px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    aspect-ratio: 13 / 15;
+    @include mobile {
+      max-width: 296px;
+      height: 356.866px;
+    }
+  }
+
+  .hero-right {
+    width: 100%;
+    max-width: 628px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include mobile {
+      inset: 0px;
+      top: 194px;
+      transform: inherit;
+      max-width: 312px;
+      height: 277.896px;
+      flex-shrink: 0;
+    }
+
+    .downloads {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: var(--space-3);
+
+      @include mobile {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 190.153px;
+        height: 58.775px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        background: linear-gradient(180deg, #404040 0%, #000 100%);
+
+        /* Shadow 2 */
+        box-shadow: 0px 20px 40px 0px rgba(183, 183, 183, 0.08),
+          0px 2px 20px 0px rgba(183, 183, 183, 0.08);
+      }
+    }
+    .mockups {
+      img {
+        object-fit: cover; /* Faz a imagem preencher o espaço cortando as bordas */
+        object-position: center;
+      }
+      position: relative;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 157 / 139;
+    }
+  }
 }

@@ -178,20 +178,19 @@ textarea {
   font-family: aeonik, aeonik Fallback;
 }
 
-@media (max-width: 1250px) {
+@include mobile {
+  :root {
+    --root-font-size: 10px;
+  }
+
+  body {
+    padding: var(--space-10) var(--space-6);
+    gap: var(--space-8);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1250px) {
   :root {
     --root-font-size: 0.8vw;
   }
 }
-
-// @media (max-width: $max-media-mobile) {
-//   :root {
-//     --root-font-size: 10px;
-//   }
-// }
-
-// @media (max-width: $max-media-mobile) {
-//   :root {
-//     --root-font-size: 2vw;
-//   }
-// }

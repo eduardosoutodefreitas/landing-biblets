@@ -1,7 +1,8 @@
+import { Screens } from "@/screens";
 import React from "react";
 
 const AccountDeletionPage = () => {
-  return <div>Deleção de conta</div>;
+  return <Screens.AccountDeletion />;
 };
 
 export default AccountDeletionPage;

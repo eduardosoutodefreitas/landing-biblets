@@ -4,4 +4,18 @@
   justify-content: space-between;
   width: 100%;
   max-width: var(--max-width);
+  gap: var(--space-3);
+
+  .links {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    .links {
+      flex-direction: column;
+    }
+  }
 }
